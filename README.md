@@ -8,8 +8,14 @@ With a **galoy**-based account, users are able to:
 - [x] send/receive bitcoin on-chain
 - [x] send/receive bitcoin over the Lightning Network
 - [x] send/receive bitcoin to other Galoy instance users at little to no cost
-- [x] track Bitcoin price activity
+- [x] automatic internal settlement when payer & payee are on the same galoy instance
+- [x] do transactions with realtime price conversions to supported fiat currencies
 - [x] find merchants to spend with on a local area map
+
+As a galoy administrator, admin users can:
+- [x] control & monitor different aspects around users & transactions
+- [x] visualize various aspects of the instance's performace via dashboards
+
 
 ![Image of community banking](images/home-image-03.jpg)
 
@@ -76,7 +82,9 @@ _Examples of deployed galoy instances._
 A community project deployed in the surfing village of El Zonte in El Salvador.
 
 #### Mobile app
-...
+_Available in selected jurisdictions_
+- Apple App Store: https://apps.apple.com/be/app/bitcoin-beach-wallet/id1531383905
+- Google Play Store: https://play.google.com/store/apps/details?id=com.galoyapp
 
 #### Tips pages
-...
+Live at: https://ln.bitcoinbeach.com
