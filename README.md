@@ -22,14 +22,9 @@ As a galoy administrator, admin users can:
 
 ## Tech components
 
-### Backend
+### Infrastructure
 
-A collection of repos that can be used to deploy the backend components required to support a bitcoin community bank.
-
-- [**`galoy`**](https://github.com/GaloyMoney/galoy)
-
-
-  The backend application that interacts with the bitcoin and accounting layers to enable sending, receiving and holding balances.
+Infrastructure for deploying the galoy backend to.
 
 - [**`galoy-infra`**](https://github.com/GaloyMoney/galoy-infra)
 
@@ -38,6 +33,15 @@ A collection of repos that can be used to deploy the backend components required
 - [**`charts`**](https://github.com/GaloyMoney/charts)
 
   Kubernetes Helm charts for deploying galoy applications to your desired infrastructure.
+
+### Backend
+
+A collection of repos that can be used to deploy the backend components required to support a bitcoin community bank.
+
+- [**`galoy`**](https://github.com/GaloyMoney/galoy)
+
+
+  The backend application that interacts with the bitcoin and accounting layers to enable sending, receiving and holding balances.
 
 - [**`price`**](https://github.com/GaloyMoney/price)
 
@@ -51,13 +55,13 @@ A collection of repos that can be used to deploy the backend components required
 
 API implementation & documention for communicating with a galoy instance backend.
 
-- [**`galoy`**](https://github.com/GaloyMoney/galoy)
+- [**`end-user`**](https://github.com/GaloyMoney/galoy/blob/main/src/graphql/main/schema.graphql) & [**`admin`**](https://github.com/GaloyMoney/galoy/blob/main/src/graphql/admin/schema.graphql) schemas
 
-  A GraphQL API that exposes the internal functions of the galoy application.
+  GraphQL APIs for end-user and admin operations against a galoy instance backend.
 
-- [**`api-docs`**](https://github.com/GaloyMoney/api-docs)
+- **`api-docs`**
 
-  Documentation for the galoy GraphQL API.
+  _Coming soon..._
 
 ### Frontend
 
