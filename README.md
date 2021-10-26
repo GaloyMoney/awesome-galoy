@@ -8,21 +8,19 @@ With a **galoy**-based account, users are able to:
 - [x] send/receive bitcoin on-chain
 - [x] send/receive bitcoin over the Lightning Network
 - [x] send/receive bitcoin to other Galoy instance users at little to no cost
-- [x] automatic internal settlement when payer & payee are on the same galoy instance
-- [x] do transactions with realtime price conversions to supported fiat currencies
+- [x] start a payment on-chain or with Lightning and have it settle internally if payee is also on galoy instance (cheaper, faster transactions)
+- [x] denominate transactions in fiat using  realtime price conversions to supported currencies
 - [x] find merchants to spend with on a local area map
 
 As a galoy administrator, admin users can:
-- [x] control & monitor different aspects around users & transactions
-- [x] visualize various aspects of the instance's performace via dashboards
+- [x] administer & provide support via interactive dashboards
+- [x] visualize various aspects of the instance's performance via realtime charts and graphs
 
 
 ![Image of community banking](images/home-image-03.jpg)
 
 
 ## Tech components
-
-A collection of the various tools and repos available for setting up your own bitcoin community-based bank.
 
 ### Backend
 
@@ -35,59 +33,63 @@ A collection of repos that can be used to deploy the backend components required
 
 - [**`galoy-infra`**](https://github.com/GaloyMoney/galoy-infra)
 
-  ...
+  Terraform modules that can be used to bring up a robust infrastructure implementation suitable for running the galoy stack
 
 - [**`charts`**](https://github.com/GaloyMoney/charts)
 
-  ...
+  Kubernetes Helm charts for deploying galoy applications to your desired infrastructure.
 
 - [**`price`**](https://github.com/GaloyMoney/price)
 
-  ...
+  Our galoy service for providing realtime price data from multiple exchanges via gRPC endpoints.
 
 - [**`dealer`**](https://github.com/GaloyMoney/dealer)
 
-  ...
+  Our galoy service for implementing fiat hedging strategies via supported exchanges.
 
 ### API
+
+API implementation & documention for communicating with a galoy instance backend.
+
 - [**`galoy`**](https://github.com/GaloyMoney/galoy)
 
-  A GraphQL API that exposes the internal functions 
-  of the galoy application.
+  A GraphQL API that exposes the internal functions of the galoy application.
 
 - [**`api-docs`**](https://github.com/GaloyMoney/api-docs)
 
-  Documentation for the galoy GraphQL API
+  Documentation for the galoy GraphQL API.
 
 ### Frontend
-- [**`galoy-tips`**](https://github.com/GaloyMoney/galoy-tips)
 
-  A single page for each user of a galoy instance, that consumes the instance's GraphQL Api to present a QR code users can share for receiving payments via the Lightning Network. 
-
-- [**`admin-panel`**](https://github.com/GaloyMoney/admin-panel)
-
-  A dashboard that can be used to do various administrative functions by the admins of a given galoy instance.
+A collection of repos that can be used by administrators and end-users to interact with a deployed galoy instance.
 
 - [**`galoy-mobile`**](https://github.com/GaloyMoney/galoy-mobile)
 
-  A mobile app to be used as a wallet by end-user, that consumes the GraphQL Api of a given galoy instance.
+  Android/iOS mobile wallet for end-users of a galoy instance.
+
+- [**`galoy-pay`**](https://github.com/GaloyMoney/galoy-pay)
+
+  A single page app that allows each user of a galoy instance to share their galoy instance vanity url to receive payments via the Lightning Network.
+
+- [**`admin-panel`**](https://github.com/GaloyMoney/admin-panel)
+
+  A web application which lets a support team manage users and transactions on their galoy instance.
 
 
 ## Galoy in the wild
 
 _Examples of deployed galoy instances._
 
-### 🏄 Bitcoin Beach Wallet Project
+- **🏄 Bitcoin Beach Wallet Project**
 
-A community project deployed in the surfing village of El Zonte in El Salvador.
+  A community project deployed in the surfing village of El Zonte in El Salvador.
 
-#### Mobile app
-_Available in selected jurisdictions_
-- Apple App Store: https://apps.apple.com/be/app/bitcoin-beach-wallet/id1531383905
-- Google Play Store: https://play.google.com/store/apps/details?id=com.galoyapp
+  - `galoy-mobile`: [Android](https://play.google.com/store/apps/details?id=com.galoyapp) | [iOS](https://apps.apple.com/be/app/bitcoin-beach-wallet/id1531383905)
 
-#### Tips pages
-Live at: https://ln.bitcoinbeach.com
+    _Available in selected jurisdictions_
+
+
+  - `galoy-pay`: [ln.bitcoinbeach.com](https://ln.bitcoinbeach.com)
 
 ## Genesis
 
