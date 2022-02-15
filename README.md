@@ -84,7 +84,7 @@ A collection of repos that can be used by administrators and end-users to intera
 
 _Examples of deployed galoy instances._
 
-- **🏄 Bitcoin Beach Wallet Project**
+### 🏄 Bitcoin Beach Wallet Project
 
   A community project deployed in the surfing village of El Zonte in El Salvador.
 
@@ -94,6 +94,16 @@ _Examples of deployed galoy instances._
 
 
   - `galoy-pay`: [ln.bitcoinbeach.com](https://ln.bitcoinbeach.com)
+
+
+### 🌴 Bitcoin Jungle
+
+  A community project deployed in Costa Rica.
+
+  - `galoy-mobile`: [Android](https://play.google.com/store/apps/details?id=app.bitcoinjungle.mobile) | [iOS](https://apps.apple.com/us/app/bitcoin-jungle/id1600313979)
+
+
+  - `galoy-pay`: [pay.bitcoinjungle.app](https://pay.bitcoinjungle.app/)
 
 ## Genesis
 
